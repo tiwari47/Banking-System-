@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#btn_setup{
+    background:  linear-gradient(to right, #95d0df, #323469);
+    font-weight: bold;
+    font-size: 27px;
+    border: 2px solid black;
+    height: 49px;
+    width: 147px;
+    margin-top: 40px;
+    margin-left: 47%;
+    border-radius: 9px;
+}
+    
+#atm_number_input{
+    border: 2px solid black;
+    height: 30px;
+    font-weight: bold;
+    font-size: medium;
+    text-align: center;
+}
+#atm_name_input{
+    border: 2px solid black;
+    height: 30px; 
+      font-weight: bold;
+       font-size: medium;
+       text-align: center;
+}
+label{
+    font-weight: bold;
+    font-size: 27px;
+}
+#h1_set_up_new_machine{
+    text-align: center;
+    text-decoration: underline;
+}
+#div_for_atm_machine_setup{
+    padding: 20px;
+}
+table{
+
+    margin-top: 20px;
+    font-size: 23px;
+    font-weight: bold;
+    width: 100%;
+  
+}
+#h1_atm_machine_detail{
+    text-decoration: underline;
+    padding: 9px
+}

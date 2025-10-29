@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="openNewAccount.css" />
+  </head>
+  <body>
+    <div id="creat_new_account_for_div">
+      <h1>Please Enter Your Detail</h1>
+      <form action="">
+        <p>Name :</p>
+        <input type="text" id="user_name" placeholder="Name" />
+        <p>Email</p>
+        <input type="email" id="user_email" placeholder="xyz@gmail.com" />
+        <p>D.O.B</p>
+        <input type="date" id="user_dob" />
+        <p>Contact Number</p>
+        <input type="number" placeholder=" not greater than 10 digit" id="user_contact_number" />
+        <p>Aadhar Number</p>
+        <input type="number" placeholder="not  greater than  12 digit" id="user_aadhar_number" />
+        <p>Pan Number</p>
+        <input type="text" id="user_pan_number" />
+        <p>Min Maintain Balance</p>
+        <input type="number" placeholder="greater than ₹500" id="user_min_maintain_balance" />
+        <p>Min Withdrawal</p>
+        <input type="number" placeholder="greater than ₹100"  id="user_min_withdrawal" />
+        <p>Max Withdrawal</p>
+        <input type="number" placeholder="greater than ₹500" id="user_max_withdrawal" />
+        <p>Total Limit</p>
+        <input type="number" id="user_total_limit" placeholder="greater than ₹500" />
+        <p>Choose Account Type</p>
+        <select name="account" id="user_account_type">
+          <option value="saving">Saving</option>
+          <option value="student">Student</option>
+        </select>
+      </form>
+      <button id="btnSubmit">Submit</button>
+    </div>
+  </body>
+  <script src="openNewAccount.js"></script>
+</html>
+

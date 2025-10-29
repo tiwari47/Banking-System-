@@ -1,0 +1,69 @@
+
+
+ <div id="pop_up_for_checkbook_issue_modal">
+        <!-- Modal content -->
+        <div id="checkbook_issue_modal_content">
+            <span id="checkbook_issue_close_modal">&times;</span>
+            <label >Enter  Account Number : </label>
+            <input type="number" id="checkbook_issue_account_number_check">
+            <button id="btn_submit_checkbook_issue_account_number">Submit!</button>
+          
+        <div id="checkbook_issue_outer_div_table_for_userdetail"> 
+            <div id="checkbook_issue_div_table_for_userdetail">
+                <div>
+                    <table border="n">
+                        <thead></thead>
+                        <tbody id="checkbook_issue_tbody_for_userdetail"></tbody>
+                    </table>
+                </div>
+                <!-- the below div is created to take  input from user to ask how many checkbooks user want to generate    start-->
+                <div id="checkbook_issue_div_for_checkbook_issue_amount">
+                    <div>
+                    
+                        <label >How many checkbook you want to Issue:</label>
+                        <input type="number"  id="checkbook_issue_count_number"><br>
+                    </div>
+                    <div id="series_number">
+                        <label > Enter 4-digit series number </label>
+                        <input type="number"  id="input_4_digit_series_number"><br>
+                    </div>
+                    <button id="btn_generate_checkBook">Submit</button>
+                </div>
+            </div>
+        </div>
+          <div id="upper_div_for_checkbook_issue_history_available">
+            <!-- div for  show available balance and checkbook generated history h1   start -->
+            <div style="display: flex;justify-content: space-between;">
+                <div>
+                    <h1 style="text-decoration: underline;">CheckBook History</h1>
+                </div>
+                <div>
+                    <div id="checkbook_issue_div_for_available_balance_output">
+                        <label for="">Available Balance:</label>
+                        <input placeholder="₹" type="number" id="checkbook_issue_output_for_available_balance" disabled>
+                    </div>
+                </div>
+            </div>
+          </div> 
+            <!--  End -->
+            <!-- div for checkbook history and  start  -->
+            <div id="checkbook_issue_div_checkbook_detail_table">
+                <table id="checkbook_issue_history_table" border="n" 3>
+                    <thead>
+                        <tr>
+                            <th>Sl No</th>
+                            <th>Account Number</th>
+                            <th>Amount</th>
+                            <th>Transaction Type</th>
+                            <th>Transaction ID</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="checkbook_issue_table_body">
+                    </tbody>
+                </table>
+            </div>
+            <!-- End -->
+        </div>
+    </div>
+   

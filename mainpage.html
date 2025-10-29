@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mainpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Services</li>
+        </ul>
+    </nav>
+    <!--  header for atm logo and heading online banking system START-->
+    <header>
+        <div id="imagediv">
+            <div id="innerimagediv">
+                &#127975
+            </div>
+        </div>
+        <div id="onlinebankingsystemdiv">
+            <h1>Online Banking System</h1>
+            <h5 style="text-align: center;">In Javascript</h5>
+        </div>
+    </header>
+    <!--END -->
+
+
+
+    <!-- div for optioncustomerdiv START -->
+    <div id="optionforcustomerdiv">
+        <ul>
+            <li>Retail Banking</li>
+            <li>Corporate Banking</li>
+            <li>International Banking</li>
+            <li>Apply Mobile Banking</li>
+            <li>Service</li>
+        </ul>
+    </div>
+    <!-- END -->
+    <!-- second main div for the user  START -->
+    <div id="seconmaindiv">
+        <div id="divfortipsupdatesEvents">
+            <h3>Tips | Updates | Events</h3>
+            <h5>First, open an account . Then apply for a debit card to got further details.
+                And finally , proceed for Internet Banking Registration to create your internet banking account.
+            </h5>
+        </div>
+        <div id="divforonlineservices">
+            <h3>Online Services</h3>
+            <button class="onlineservicesitem" id="btnOpenNewAccount">Open New Account</button>
+            <button class="onlineservicesitem" id="btn_credit_account">Credit Account</button>
+            <button class="onlineservicesitem" id="btn_debit_account">Debit Account</button>
+            <button class="onlineservicesitem" id="btn_checkbook_issue">CheckBook Issue</button>
+            <button class="onlineservicesitem" id="btn_atm">ATM Card</button>
+            <button class="onlineservicesitem" id="btn_cash_report">Cash Report</button>
+            <button class="onlineservicesitem" id="btn_atm_setup">ATM Setup</button>
+            <button class="onlineservicesitem" id="btn_withdrawal_from_atm">ATM  Service</button>
+        </div>
+    </div>
+    <!---END -->
+
+    <!--  TOTAL NUMBER OF TOTAL ACCOUNTS, SAVING ACCOUNT STUDENT ACCOUNTS  START -->
+    <div id="maindivforaccounts">
+        <div id="div_total_account">Total Account</div>
+        <div id="div_saving_account">Saving Account</div>
+        <div id="div_student_account">Student Account</div>
+    </div>
+    <!-- END  -->
+
+    <!--  main div TO SHOW  accounts number based on the category START-->
+    <div id="main_div_account_counts">
+        <p id="count_total_account">0</p>
+        <p id="count_saving_account">0</p>
+        <p id="count_student_account">0</p>
+    </div>
+    <!----END  -->
+
+
+
+
+    <!-- -    pop-up model for  credit account     START-->
+    <div id="pop_up_for_credit_account_modal">
+        <!-- Modal content -->
+        <div id="credit_account_modal_content">
+            <span id="close_modal">&times;</span>
+            <label for="account_number">Enter  your Account Number : </label>
+            <input type="number" id="account_number_check">
+            <button id="btn_submit_account_number">Submit!</button>
+            <!-- <h5 id="error_for_account_length">*Please enter last 6 digit of account number</h5> -->
+            <div id="outer_div_table_for_userdetail">
+                <div id="div_table_for_userdetail">
+                    <div>
+                        <table border="n">
+                            <thead></thead>
+                            <tbody id="tbody_for_userdetail"></tbody>
+                        </table>
+                    </div>
+                    <!-- the below div is created to take  input from user =  credit amount    start-->
+                    <div id="div_for_credit_amount">
+                        <div>
+                            <!--  div for select desposte via cash or check  start -->
+                            <div id="div_deposite_via">
+                                <label for="">Despsoite via</label>
+                                <select name="depositeType" id="selectDepositeType">
+                                    <option value="Cash">Cash</option>
+                                    <option value="Check">Check</option>
+                                </select>
+                                <!-- this div is created because if user will select check then he/she need to enter the account number from which they want to debit money    bydefault it is  hidden   start-->
+                                <div id="div_depositemode_bycheck">
+                                    <label for="">Enter 4 digit series number</label>
+                                    <input type="number" id="input_account_number_mode_bycheck">
+                                </div>
+                                <!---  End  -->
+                            </div>
+                            <!---End -->
+                            <label for="deposite amount: ">Enter Amount you want to Deposite :</label>
+                            <input type="number" placeholder="₹" id="deposite_amount"><br>
+                        </div>
+                        <div id="div_for_re-enter_depsoite_amount">
+                            <label for="re-enter depsoite amount  "> Re-Enter Deposite Amount :</label>
+                            <input type="number" placeholder="₹" id="re_enter_depsoite_amount"><br>
+                        </div>
+                        <button id="btn_deposite_amount">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div id="upper_div_for_credit_history_available">
+                <!-- div for  show available balance and credit history h1   start -->
+                <div style="display: flex;justify-content: space-between;">
+                    <div>
+                        <h1 style="text-decoration: underline;">Credit History</h1>
+                    </div>
+                    <div>
+                        <div id="div_for_available_balance_output">
+                            <label for="">Available Balance:</label>
+                            <input placeholder="₹" type="number" id="output_for_available_balance" disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  End -->
+            <!-- div for Tansaction  table and  start  -->
+            <div id="div_transaction_table">
+                <table id="tansaction_table" border="n" 3>
+                    <thead>
+                        <tr>
+                            <th>Sl No</th>
+                            <th>Account Number</th>
+                            <th>Amount</th>
+                            <th>Transaction Type</th>
+                            <th>Transaction ID</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tansaction_table_body">
+
+                    </tbody>
+                </table>
+            </div>
+            <!-- End -->
+        </div>
+    </div>
+    <!-- POP MODEL for credit account  END  -->
+    <!----- credit account k liya pop up model khtm hua    -->
+
+
+
+
+
+
+    <!-----  pop-up model for debit account START  -->
+    <div id="pop_up_for_debit_account_modal">
+        <!-- Modal content -->
+        <div id="debit_account_modal_content">
+            <span id="debit_close_modal">&times;</span>
+            <label for="debit_account_number">Enter Account Number : </label>
+            <input type="number" id="debit_account_number_check">
+            <button id="btn_submit_debit_account_number">Submit!</button>
+
+            <div id="debit_outer_div_table_for_userdetail">
+                <div id="debit_div_table_for_userdetail">
+                    <div>
+                        <table border="n">
+                            <thead></thead>
+                            <tbody id="debit_tbody_for_userdetail"></tbody>
+                        </table>
+                    </div>
+                    <!-- the below div is created to take  input from user =  credit amount    start-->
+                    <div id="debit_div_for_debit_amount">
+                        <div>
+                            <!--  div for select desposte via cash or check  start -->
+                            <div id="debit_div_debit_via">
+                                <label for="">Debit via</label>
+                                <select name="debitType" id="select_debit_type">
+                                    <option value="Cash">Cash</option>
+                                    <option value="Check">Check</option>
+                                    <option value="atm">ATM</option>
+                                </select>
+                                <!-- this div is created because if user will select check then he/she need to enter the account number from which they want to debit money    bydefault it is  hidden   start-->
+                                <div id="debit_div_debit_mode_bycheck">
+                                    <label for="">Enter Account Number</label>
+                                    <input type="number" id="debit_input_account_number_mode_bycheck">
+                                </div>
+
+                                <!---  End  -->
+                            </div>
+                            <!---End -->
+                            <label for="debit amount: ">Enter Amount you want to Debit :</label>
+                            <input type="number" placeholder="₹" id="debit_amount"><br>
+                        </div>
+                        <div id="div_for_re-enter_debit_amount">
+                            <label for="re-enter debit_ amount  "> Re-Enter Debit Amount :</label>
+                            <input type="number" placeholder="₹" id="re_enter_debit_amount"><br>
+                        </div>
+                        <button id="btn_debit_amount">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div id="upper_div_for_debit_history_available">
+                <!-- div for  show available balance and debit history h1   start -->
+                <div style="display: flex;justify-content: space-between;">
+                    <div>
+                        <h1 style="text-decoration: underline;">Debit History</h1>
+                    </div>
+                    <div>
+                        <div id="debit_div_for_available_balance_output">
+                            <label for="">Available Balance:</label>
+                            <input placeholder="₹" type="number" id="debit_output_for_available_balance" disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  End -->
+            <!-- div for Tansaction  table and  start  -->
+            <div id="debit_div_transaction_table">
+                <table id="debit_tansaction_table" border="n" >
+                    <thead>
+                        <tr>
+                            <th>Sl No</th>
+                            <th>Account Number</th>
+                            <th>Amount</th>
+                            <th>Transaction Type</th>
+                            <th>Transaction ID</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="debit_tansaction_table_body">
+                    </tbody>
+                </table>
+            </div>
+            <!-- End -->
+        </div>
+    </div>
+    <!-- POP MODEL for credit account  END  -->
+
+
+
+
+
+
+    <!-- POP MODEL FOR CHECKBOOK ISSUE START HERE-->
+
+    <div id="pop_up_for_checkbook_issue_modal">
+        <!-- Modal content -->
+        <div id="checkbook_issue_modal_content">
+            <span id="checkbook_issue_close_modal">&times;</span>
+            <label>Enter Account Number : </label>
+            <input type="number" id="checkbook_issue_account_number_check">
+            <button id="btn_submit_checkbook_issue_account_number">Submit!</button>
+
+            <div id="checkbook_issue_outer_div_table_for_userdetail">
+                <div id="checkbook_issue_div_table_for_userdetail">
+                    <div>
+                        <table border="n">
+                            <thead></thead>
+                            <tbody id="checkbook_issue_tbody_for_userdetail"></tbody>
+                        </table>
+                    </div>
+                    <!-- the below div is created to take  input from user to ask how many checkbooks user want to generate    start-->
+                    <div id="checkbook_issue_div_for_checkbook_issue_amount">
+                        <div>
+
+                            <label>How many checkbook you want to Issue:</label>
+                            <input type="number" id="checkbook_issue_count_number"><br>
+                        </div>
+                        <div id="series_number">
+                            <label> Enter 4-digit series number :</label>
+                            <input type="number" id="input_4_digit_series_number"><br>
+                        </div>
+                        <button id="btn_generate_checkBook">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div id="upper_div_for_checkbook_issue_history_available">
+                <!-- div for  show available balance and checkbook generated history h1   start -->
+                <div style="display: flex;justify-content: space-between;">
+                    <div>
+                        <h1 style="text-decoration: underline;">CheckBook History</h1>
+                    </div>
+                    <div>
+                        <div id="checkbook_issue_div_for_available_balance_output">
+                            <label for="">Available Balance:</label>
+                            <input placeholder="₹" type="number" id="checkbook_issue_output_for_available_balance"
+                                disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  End -->
+            <!-- div for checkbook history and  start  -->
+            <div id="checkbook_issue_div_checkbook_detail_table">
+                <table id="checkbook_issue_history_table" border="n" 3>
+                    <thead>
+                        <tr>
+                            <th>Sl No</th>
+                            <th>CheckBook Series Number</th>
+                            <th>Series Number</th>
+                            <th>Date of checkbook Issued</th>
+                        </tr>
+                    </thead>
+                    <tbody id="checkbook_issue_table_body">
+                    </tbody>
+                </table>
+            </div>
+            <!-- End -->
+        </div>
+    </div>
+    <!--popup for checkbook_issue END here  -->
+
+    <!-- POP MODEL FOR ATM Generate START HERE-->
+    <div id="pop_up_for_atm_modal">
+        <!-- Modal content -->
+        <div id="atm_modal_content">
+            <span id="atm_close_modal">&times;</span>
+            <label>Enter Account Number : </label>
+            <input type="number" id="atm_account_number_check">
+            <button id="btn_submit_atm_account_number">Submit!</button>
+
+            <div id="atm_outer_div_table_for_userdetail">
+                <div id="atm_div_table_for_userdetail">
+                    <div>
+                        <table border="n">
+                            <thead></thead>
+                            <tbody id="atm_tbody_for_userdetail"></tbody>
+                        </table>
+                    </div>
+
+                <!--  div design for atm card started from here  START-->
+                    <div id="div_for_atm">
+                        <div style="display: flex; justify-content: space-between; padding: 14px; ">
+                            <i class="fa fa-credit-card" style="font-size:36px"></i>
+                            <h2>Virtual Credit Card</h1>
+                        </div>
+                        <div
+                            style="padding: 14px; margin-top: 70px;display: flex; justify-content: space-between; font-size: 23px; font-family:  Arial, sans-serif">
+                            <span id="span-4no-1"></span>
+                            <span id="span-4no-2"></span>
+                            <span id="span-4no-3"></span>
+                            <span id="span-4no-4"></span>
+                        </div>
+                        <div style="display: flex; padding-left: 19px; justify-content: space-between;">
+                            <h4 id="h4_card_holder_name">vikash tiwari</h4>
+                            <div style="display: flex; padding-right: 20px;height: 50px; width: auto;">
+                                <h4>Exp:</h4>
+                                <h2  id ="atm_expiry_number" style="text-align: center;">12/26</h2>
+                            </div>
+                        </div>
+                    </div>
+                 <!--  div design for atm card ENDED from here  END-->
+                    <!-- the below div is created to take  input from user to set 4 digit pin number    start-->
+                    <div id="div_for_atm_card_generate_amount">
+                        <div>
+                            <label>Enter 4 digit pin number </label>
+                            <input type="number" id="atm_pin_number"><br>
+                        </div>
+                        <button id="btn_generate_atm">Generate ATM 🏧</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--popup for atm generate END here  -->
+    
+
+
+
+
+
+
+
+        <!-- pop up model for  cash report-->
+     <div id="pop_up_for_cash_report_model">
+        <!-- Modal content -->
+         <div id="atm_modal_content" >
+            <span id="cash_report_close_model">&times;</span>
+            <label>Enter Account Number : </label>
+            <input type="number" id="cash_report_account_number" >
+            <button id="btn_submit_cash_report_button" >Submit!</button>
+
+            <div id="cash_report_outer_div_table_for_userdetail" >
+                <div id="cash_report_table_for_userdetail">
+                    <div>
+                        <table border="n">
+                            <thead></thead>
+                            <tbody id="cash_report_tbody_for_userdetail"></tbody>
+                        </table>
+                    </div>  
+                </div>
+            </div>
+            <div >
+             <div >
+                <h1 style="text-align: center; text-decoration: underline;">Cash Report</h1>
+             </div> 
+            <!-- div for cash report  and  start  -->
+            <div >
+                <table border="n" style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Sl No</th>
+                            <th>Transaction ID</th>
+                            <th>Transaction Type</th>
+                            <th>Transaction Mode</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cash_report_table_tbody">
+                    </tbody>
+                </table>
+            </div>
+            <!-- End -->
+        </div>
+    </div>
+    <!--popup for cash report END here  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="mainpage.js"></script>
+
+</html>

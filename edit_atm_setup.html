@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="edit_atm_setup.css">
+</head>
+<body>
+    <h1 id="h1_atm_machine_operation">ATM MACHINE  OPERATION</h1>
+   <div id="outer_main_div">
+  
+    <div style="display: flex; justify-content: space-between;">
+        
+        <div>
+            <label for="">ATM Number :</label>
+            <input id="atm_number_output" type="number"  disabled>
+        </div>
+        <div>
+            <label for="">ATM Name :</label>
+            <input id="atm_name_output" type="text" disabled>
+        </div>
+        <div>
+            <label for="">Available Balance :</label>
+            <input id="atm_available_balance_output" type="number" disabled>
+        </div>
+    </div>
+    <h1 id="h1_add_money_atm_machine">Add Money To Atm Machine :</h1>
+     <div style="display: flex;">
+        <div>
+            <Img id="2000_note" src="2000_note.jpg"></Img>
+            
+            <input type="number" id="output_2000_note" disabled>
+        </div>
+        <div>
+            <Img id="500_note" src="500_note.jpg"></Img>
+            
+            <input type="number" id="output_500_note"  disabled>
+        </div>
+        <div>
+            <Img id="200_note" src="200_note.jpg"></Img>
+            
+            <input type="number" id="output_200_note"   disabled>
+        </div>
+        <div>
+            <Img id="100_note" src="100_note.jpg"></Img>
+     
+            <input type="number" id="output_100_note"  disabled>
+        </div>
+     </div>
+      <div id="div_btn_add_money_and_total_money_added_output">
+          <button id="btn_add_money_in_atm">&#x1F512 Add Money </button>
+          <input type="number"  id="total_money_added_in_atm_machine_output" placeholder="&#128176" disabled>
+      </div>
+   </div>
+    
+</body>
+<script src="edit_atm_setup.js"></script>
+</html>

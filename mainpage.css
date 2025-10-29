@@ -1,0 +1,657 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #003344;
+  width: 100%;
+  height: 30px;
+  z-index: -1;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: right;
+}
+
+nav ul li {
+  padding-top: 3px;
+  color: white;
+  font-size: 18px;
+  padding-right: 20px;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  background-color: #003c57;
+  z-index: -1;
+}
+#imagediv {
+  display: inline;
+  padding-top: 20px;
+  padding: 10px;
+  margin-left: 30px;
+  background-color: white;
+  height: 40px;
+  margin-top: 6px;
+  border-radius: 11px;
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+#innerimagediv {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 5px;
+  background: linear-gradient(to right, #1ca4d5, #292b64);
+}
+
+#onlinebankingsystemdiv {
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  padding-top: 18px;
+  padding-left: 12px;
+}
+
+li:hover {
+  cursor: pointer;
+  background-color: cadetblue;
+  color: antiquewhite;
+}
+
+
+#optionforcustomerdiv{
+  background-color: #003344;
+  color: white;
+  width: 100%;
+  height: 25px;
+} 
+
+#optionforcustomerdiv ul{
+    font-weight: bold; 
+    font-size: 21px;
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#seconmaindiv{
+  z-index: -1;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#divfortipsupdatesEvents{
+     height: 300px;
+     width: 50%;
+     background-color:#E3E2E2;
+     margin: 20px;
+}
+
+
+#divforonlineservices{
+     height: 300px;
+     width: 50%;
+     background-color: #C4D7E3;
+     margin: 20px;
+
+}
+#divfortipsupdatesEvents h3{
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top : 20px;
+
+}
+
+#divfortipsupdatesEvents h5{
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    color: 
+    #589EEF;
+   
+    font-size: 20px;
+}
+
+
+
+
+#divforonlineservices h3{
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top : 20px;
+}
+ 
+
+
+.onlineservicesitem{
+
+    height: 30px;
+    padding: 20px;
+    border: 2px solid black;
+  
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-bottom: 0px;
+    padding-top: 2px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#maindivforaccountsoption{
+  width: 100%;
+  display: flex;
+  height: 50px;
+  background-color: #1ca4d5;
+
+}
+
+#maindivforaccounts{
+  font-weight: bold;
+  
+ 
+  width: 100%;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#main_div_account_counts{
+   width: 100%;
+   display: flex;
+   font-weight: bold;
+   font-size: 40px;
+   text-align: center;
+   justify-content: space-evenly;
+}
+#div_total_account{
+   border: 1px solid #003c57;
+   background-color: #003c57;
+   color: white;
+   border-radius: 2px;
+   padding: 6px;
+}
+
+#div_saving_account{
+    border: 1px solid #003c57;
+   background-color: #003c57;
+   color: white;
+   border-radius: 2px;
+   padding: 6px;
+
+}
+
+#div_student_account{
+   border: 1px solid #003c57;
+   background-color: #003c57;
+   color: white;
+   border-radius: 2px;
+   padding: 6px;
+}
+
+
+
+
+
+#pop_up_for_credit_account_modal{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(218, 207, 207); /* Fallback color */
+  background-color: rgba(218, 210, 210, 0.4); /* Black w/ opacity */
+}
+
+#credit_account_modal_content {
+  clear: left;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  height: auto;
+}
+/* The Close Button */
+#close_modal {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close_modal:hover,
+#close_modal {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+label{
+   font-size:  20px;
+   font-weight: bold;
+}
+
+#btn_submit_account_number{
+  height: 20px;
+  width:  70px;
+  border:  1px solid black;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#div_table_for_userdetail{
+  margin-top: 20px;
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#btn_deposite_amount{
+    background: linear-gradient(to top, rgb(95, 174, 213), white);;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 28px;
+    border: 2px solid black;
+    height: 40px;
+    width: 170px;
+}
+#outer_div_table_for_userdetail{
+  display: none;
+}
+#upper_div_for_credit_history_available{
+  display: none;
+}
+
+#output_for_available_balance{
+border-radius: 5px;
+border: 2px solid black;
+width: 168px;
+height: 28px;
+color: red;
+text-align: center;
+}
+
+#div_for_available_balance_output{
+  margin-top: 12px;
+}
+#div_transaction_table{
+  display: none;
+}
+#tansaction_table{
+width: 100%;
+ margin-top: 20px
+
+}
+
+#selectDepositeType{
+    text-align: center;
+    width: 176px;
+    margin-left: 235px;
+}
+#input_account_number_mode_bycheck{
+  margin-left: 115px;
+}
+
+
+#deposite_amount{
+  margin-left: 33px;
+}
+#re_enter_depsoite_amount{
+   margin-left: 108px;
+}
+#div_depositemode_bycheck{
+  display: none;
+   
+}
+
+
+/*css styling for pop for debit account start here  */
+#pop_up_for_debit_account_modal{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(218, 207, 207); /* Fallback color */
+  background-color: rgba(218, 210, 210, 0.4); /* Black w/ opacity */
+}
+#debit_account_modal_content {
+  clear: left;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  height: auto;
+}
+/* The Close Button */
+#debit_close_modal {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#debit_close_modal:hover,
+#debit_close_modal {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+label{
+   font-size:  20px;
+   font-weight: bold;
+}
+#btn_submit_debit_account_number{
+  height: 20px;
+  width:  70px;
+  border:  1px solid black;
+  font-weight: bold;
+  font-size: 15px;
+}
+#debit_div_table_for_userdetail{
+  margin-top: 20px; 
+  display: flex;
+  justify-content: space-between;
+}
+#btn_debit_amount{
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 28px;
+    border: 2px solid black;
+    height: 40px;
+    width: 170px;
+}
+#debit_outer_div_table_for_userdetail{
+  display: none;
+}
+#upper_div_for_debit_history_available{
+  display: none;
+}
+#debit_output_for_available_balance{
+border-radius: 5px;
+border: 2px solid black;
+width: 168px;
+height: 28px;
+color: red;
+text-align: center;
+}
+#debit_div_for_available_balance_output{
+  margin-top: 12px;
+}
+
+#debit_div_transaction_table{
+  display: none;
+}
+#debit_tansaction_table{
+width: 100%;
+ margin-top: 20px
+
+}
+#select_debit_type{
+    text-align: center;
+    width: 176px;
+    margin-left: 244px;
+}
+#debit_input_account_number_mode_bycheck{
+  margin-left: 117px;
+}
+
+#debit_amount{
+  margin-left: 33px;
+}
+
+#re_enter_debit_amount{
+   margin-left: 108px;
+}
+
+#debit_div_debit_mode_bycheck{
+  display: none;  
+}
+
+
+/*css styling for pop for checkBOOK iSSUE  start here  */
+#pop_up_for_checkbook_issue_modal{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(218, 207, 207); /* Fallback color */
+  background-color: rgba(218, 210, 210, 0.4); /* Black w/ opacity */
+}
+#checkbook_issue_modal_content {
+  clear: left;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  height: auto;
+}
+/* The Close Button */
+#checkbook_issue_close_modal {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#checkbook_issue_close_modal:hover,
+#checkbook_issue_close_modal {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+label{
+   font-size:  20px;
+   font-weight: bold;
+}
+#btn_submit_checkbook_issue_account_number{
+  height: 20px;
+  width:  70px;
+  border:  1px solid black;
+  font-weight: bold;
+  font-size: 15px;
+}
+#checkbook_issue_div_table_for_userdetail{
+  margin-top: 20px; 
+  display: flex;
+  justify-content: space-between;
+}
+#btn_generate_checkBook{
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 28px;
+    border: 2px solid black;
+    height: 40px;
+    width: 170px;
+}
+
+
+#checkbook_issue_outer_div_table_for_userdetail{
+  display: none;
+}
+
+#upper_div_for_checkbook_issue_history_available{
+  display: none;
+}
+
+
+#checkbook_issue_div_for_available_balance_output{
+  margin-top: 12px;
+}
+
+
+#checkbook_issue_output_for_available_balance{
+border-radius: 5px;
+border: 2px solid black;
+width: 168px;
+height: 28px;
+color: red;
+text-align: center;
+}
+
+#checkbook_issue_div_checkbook_detail_table{
+  display: none;
+}
+#checkbook_issue_history_table{
+width: 100%;
+ margin-top: 20px
+
+}
+#select_debit_type{
+    text-align: center;
+    width: 176px;
+    margin-left: 244px;
+}
+#debit_input_account_number_mode_bycheck{
+  margin-left: 117px;
+}
+
+#input_4_digit_series_number{
+  margin-left: 104px;
+}
+
+/* css for generating atm card  START*/
+/*css styling for pop for checkBOOK iSSUE  start here  */
+/*abhi display block kr rhe hai baad me none kr denge  */
+#pop_up_for_atm_modal{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(218, 207, 207); /* Fallback color */
+  background-color: rgba(218, 210, 210, 0.4); /* Black w/ opacity */
+}
+#atm_modal_content {
+  clear: left;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  height: auto;
+}
+/* The Close Button */
+#atm_close_modal {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#atm_close_modal:hover,
+#atm_close_modal {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+label{
+   font-size:  20px;
+   font-weight: bold;
+}
+#btn_submit_atm_account_number{
+  height: 20px;
+  width:  70px;
+  border:  1px solid black;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#atm_div_table_for_userdetail{
+  margin-top: 20px; 
+  display: flex;
+  justify-content: space-between;
+}
+#btn_generate_checkBook{
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 28px;
+    border: 2px solid black;
+    height: 40px;
+    width: 170px;
+}
+
+/*abhi display block kr rhe hai baad me none kr denge  */
+#atm_outer_div_table_for_userdetail{
+  display: none;
+}
+
+
+#div_for_atm{
+  display: none;
+  font-family: Arial, sans-serif;
+  border-radius: 25px;
+  border: 1px solid white;
+   margin: auto;
+   height: 230px;
+   width: 400px;
+   background: linear-gradient(to right, #95d0df, #323469);;
+}
+
+
+#div_for_atm_card_generate_amount{  
+display: none;
+}
+
+/*abhi k liya isko display block kr rhe hai baad me thik kr denege  */
+#pop_up_for_cash_report_model{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(218, 207, 207); /* Fallback color */
+  background-color: rgba(218, 210, 210, 0.4); /* Black w/ opacity */
+}
+
+#cash_report_close_model{
+   color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+#cash_report_close_model:hover,
+#cash_report_close_model {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#h1_select_atm_machine_withdrawal_money{
+    text-decoration: underline;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+#atm_machine_option{
+    flex-wrap: wrap;
+    display:  flex ;
+    height: auto;
+    width: 100%;
+}

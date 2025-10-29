@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+#upper-main-div {
+  height: 590px;
+  width: 450px;
+  background-color: #3b4f67;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#div-atm-heading {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 42px;
+  font-weight: bold;
+  height: 60px;
+  margin: 12px;
+  text-align: center;
+  width: 430px;
+  background-color: aliceblue;
+}
+#div-atm-operation-user-side {
+  width: 428px;
+  height: 491px;
+  margin-left: 12px;
+  background-color: #798593;
+}
+#div-atm-screen {
+  margin-left: 10px;
+  background-color: rgb(22, 4, 4);
+  width: 410px;
+  height: 200px;
+}
+#btn-for-user-input {
+  display: flex;
+  margin-left: 12px;
+  margin-top: 9px;
+  height: 155px;
+  width: 405px;
+  background-color: #667480;
+}
+
+.button {
+  margin-left: 2px;
+  margin-right: 2px;
+
+  background-color: #bfd3ea;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  width: 60px;
+  height: 40px;
+}
+#div-btn-numbers-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#btn_atm_start {
+    margin: 1px;
+  background-color: rgb(126, 211, 126);
+  width: 70px;
+  height: 40px;
+  font-weight: bold;
+  font-size: medium;
+  border-radius: 10px;
+}
+#btn_atm_cancel {
+    margin: 1px;
+  background-color: rgb(193, 66, 66);
+  width: 70px;
+  height: 40px;
+  font-weight: bold;
+  font-size: medium;
+  border-radius: 10px;
+}
+
+#btn_atm_submit {
+    margin: 1px;
+  background-color: rgb(86, 147, 211);
+  width: 70px;
+  height: 40px;
+  font-weight: bold;
+  font-size: medium;
+  border-radius: 10px;
+}
+#btn_atm_back{
+  color: white;
+   background-color: rgb(1, 7, 14);
+  width: 70px;
+  height: 40px;
+  margin: 1px;
+  font-weight: bold;
+  font-size: medium;
+  border-radius: 10px;
+}
+input{
+  border-color: transparent;
+  background-color: transparent;
+  display: block;
+  height: 40px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  
+  color: whitesmoke;
+  width: 100%;
+}

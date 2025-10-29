@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM SETUP</title>
+    <link rel="stylesheet" href="atm_setup.css">
+</head>
+<body>
+    <div id="div_for_atm_machine_setup">
+        <div>
+           <h1 id="h1_set_up_new_machine">SET-UP NEW ATM MACHINE</h1>
+            <div style="display: flex; justify-content: space-between;">
+                <div>
+                     <label for="">Enter ATM Name: </label>
+                     <input id="atm_name_input" type="text">
+                </div>
+                <div>
+                    <label for="">ATM Number:</label>
+                    <input type="number" id="atm_number_input" placeholder="4-digit_only">
+                </div>
+            </div>
+            <div><button id="btn_setup">SET-UP</button></div>
+        </div>
+    </div>
+    <h1 id="h1_atm_machine_detail">ATM MACHINE DETAIL</h1>
+    <div>
+        <table border="n">
+            <thead style="text-decoration: underline;">
+                <tr>
+                    <th>Sl no</th>
+                    <th>ATM Name </th>
+                    <th>ATM Number </th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="atm_detail_table_tbody" style="text-align: center;">
+             
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="atm_setup.js"></script>
+</html>
